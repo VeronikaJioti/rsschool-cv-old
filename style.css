@@ -133,15 +133,28 @@ h2 {
 }
 
 .section1 {
-  width: 70%;
+  width: 60%;
 }
-.summary, .skills {
+.summary, .skills, .contacts {
   padding: 5px 20px 20px 40px;
 }
+img, p {
+  display: inline-block;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .section2 {
   width: 30%;
 }
 
+#home {
+  width: 10px;
+  height: 10px;
+  color: #ED4763;
+}
 .section-title {
   margin-bottom: 4px;
   font-size: 20px;
