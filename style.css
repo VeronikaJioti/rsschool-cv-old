@@ -138,23 +138,32 @@ h2 {
 .summary, .skills, .contacts {
   padding: 5px 20px 20px 40px;
 }
-img, p {
-  display: inline-block;
-}
-.contacts {
+
+.flex {
   display: flex;
+  align-items: top;
+}
+.column {
   flex-direction: column;
 }
-
+.row {
+  flex-direction: row;
+}
 .section2 {
   width: 30%;
 }
 
-#home {
+.icon {
   width: 10px;
   height: 10px;
+  margin-top: 5px;
+  margin-right: 7px;
   color: #ED4763;
 }
+.contacts p {
+  margin-bottom: 5px;
+}
+
 .section-title {
   margin-bottom: 4px;
   font-size: 20px;
