@@ -181,7 +181,7 @@ ul li::before {
 
 .flex {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .column {
@@ -251,6 +251,6 @@ ul li::before {
   justify-content: space-around;
 }
 
-.footer a,p {
+.footer a, .footer p{
   color: #AAABAE;
 }
