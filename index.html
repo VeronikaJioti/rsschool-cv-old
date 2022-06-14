@@ -48,14 +48,30 @@
       </div>
       <div class="skills">
         <h2 class="section-title">Skills</h2>
-        <ul>
-          <li>T-SQL;</li>
-          <li>Microsoft Server Management Studio;</li>
-          <li>Visual Reporting Studio 2005/2008;</li>
-          <li>✨HTML5;</li>
-          <li>CSS;</li>
-          <li>Bootstrap;</li>
-        </ul>
+        <p class="bullet">T-SQL;</p>
+        <p class="bullet">Microsoft Server Management Studio;</p>
+        <p class="bullet">Visual Reporting Studio 2005/2008;</p>
+        <p class="bullet">HTML5;</p>
+        <p class="bullet">CSS;</p>
+        <p class="bullet">Bootstrap;</p>
+      </div>
+      <div class="code">
+        <h2 class="section-title">Code Example:</h2>
+        <code>DECLARE @bpid INT <br>
+          DECLARE Curs CURSOR FOR<br>
+          &nbsp;SELECT BPId FROM  dbo.BusinessProcesses
+          &nbsp;WHERE BPTypeCode='REVENUE_CLIENT_CLOSE_OUT' AND ValueDate='20130130' AND BPStatusId=9<br>
+          OPEN Curs<br>
+          FETCH NEXT FROM Curs INTO @bpid<br>
+          WHILE @@FETCH_STATUS=0<br>
+          &nbsp;BEGIN<br>
+          &nbsp;UPDATE dbo.BusinessProcesses<br>
+          &nbsp;SET BPStatusId=10<br>
+          &nbsp;WHERE BPId=@bpid<br>
+          FETCH NEXT FROM Curs INTO @bpid<br>
+          END<br>
+          CLOSE Curs<br>
+          DEALLOCATE Curs</code>
       </div>
     </section>
   </main>
