@@ -109,9 +109,16 @@ input, select {
   color: #101214;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container {
   display: flex;
-  justify-items: flex-start;
+  flex-direction: row;
+  justify-content:flex-start;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -236,5 +243,14 @@ ul li::before {
   font-size: 14px;
   font-weight: 600;
   opacity: 0.7;
+  color: #AAABAE;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer a,p {
   color: #AAABAE;
 }
