@@ -189,6 +189,12 @@ ul li::before {
   width: 30%;
 }
 
+@media (max-width: 768px) {
+  .section1, .section2 {
+    width: 100%;
+  }
+}
+
 .icon {
   margin-top: 5px;
   margin-right: 7px;
