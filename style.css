@@ -100,7 +100,7 @@ hr {
 input, select {
   vertical-align:middle;
 }
-/* Styles */
+/* Main Styles */
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
@@ -110,12 +110,20 @@ input, select {
 }
 
 .container {
+  display: flex;
+  justify-items: flex-start;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .profile {
-  margin: 40px 10px 10px 40px;
+  margin: 40px 0 0 40px;
+  width: 70%;
+}
+
+.photo {
+  margin: 40px 0 0 60px;
+  width: 30%;
 }
 
 h1 {
@@ -126,9 +134,31 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
 code {
   font-size: 14px;
 }
+
+span {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+ul {
+  margin-left: 20px;
+  padding-bottom: 3px;
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color:#AAABAE;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -137,20 +167,24 @@ code {
 .section1 {
   width: 70%;
 }
-.summary, .skills, .contacts, .code {
-  padding: 5px 20px 20px 40px;
+
+.summary, .skills, .contacts, .code, .work-expirience, .personal, .certificate, .languages {
+  padding: 5px 20px 5px 40px;
 }
 
 .flex {
   display: flex;
   align-items: top;
 }
+
 .column {
   flex-direction: column;
 }
+
 .row {
   flex-direction: row;
 }
+
 .section2 {
   width: 30%;
 }
@@ -160,6 +194,7 @@ code {
   margin-right: 7px;
   color: #101214;
 }
+
 .contacts p {
   margin-bottom: 5px;
 }
@@ -167,6 +202,15 @@ code {
 .section-title {
   margin-bottom: 4px;
   font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #AAABAE;
+}
+
+.organization {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 5px;
   color: #AAABAE;
@@ -180,4 +224,11 @@ code {
   background-color: #AAABAE;
   color: #FFF;
   border-radius: 4px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.7;
+  color: #AAABAE;
 }
