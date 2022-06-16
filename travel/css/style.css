@@ -85,7 +85,7 @@
   left: 120px;
 }
 
-h1, h2, .input {
+h1, .preview h2, .input, .signature {
   font-family: 'Aleo';
 }
 
@@ -97,7 +97,7 @@ h1 {
   color: #FFFFFF;
 }
 
-h2 {
+.preview h2 {
   margin-top: 56px;
   font-style: italic;
   font-weight: 700;
@@ -120,3 +120,44 @@ h2 {
   border: none;
 }
 
+.steps {
+  width: 1177px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.step-header {
+  margin-top: 80px;
+  margin-bottom: 54PX;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  text-align: center;
+}
+
+.steps-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+.signature {
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #0D606F;
+}
